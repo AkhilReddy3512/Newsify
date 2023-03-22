@@ -1,0 +1,72 @@
+{
+    "status": "ok",
+    "totalResults": 34,
+    "articles": [
+    {
+    "source": {
+    "id": null,
+    "name": "YouTube"
+    },
+    "author": null,
+    "title": "The whole league went HOLY BLEEP! Brian Windhorst on Kevin Durant trade to Suns | Get Up - ESPN",
+    "description": "On Get Up, Brian Windhorst details the phone conversation with an anonymous NBA GM when the Brooklyn Nets traded Kevin Durant to the Phoenix Suns.✔️Subscribe...",
+    "url": "https://www.youtube.com/watch?v=FdbDOuMMnrs",
+    "urlToImage": "https://i.ytimg.com/vi/FdbDOuMMnrs/maxresdefault.jpg",
+    "publishedAt": "2023-02-09T13:49:18Z",
+    "content": null
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "CBS Sports"
+    },
+    "author": "",
+    "title": "Russell Westbrook trade: Why Lakers did well to upgrade roster while preserving flexibility - CBS Sports",
+    "description": "Rob Pelinka sheds Westbrook while adding three good players, for just one future pick",
+    "url": "https://www.cbssports.com/nba/news/russell-westbrook-trade-why-lakers-did-well-to-upgrade-roster-while-preserving-flexibility/",
+    "urlToImage": "https://sportshub.cbsistatic.com/i/r/2021/12/14/4b7ec0ad-1f69-4774-9acc-e24d7e24db6c/thumbnail/1200x675/9a7ec6c2b7e1ca9eb29d0b1b988507e8/westbrook-2.jpg",
+    "publishedAt": "2023-02-09T13:40:00Z",
+    "content": "The Lakers finally traded Russell Westbrook on Wednesday, ending the tireless speculation as to when, or if, they would actually do so. It only cost them one first-round pick (2027, top-four protecte… [+2821 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "CNET"
+    },
+    "author": "Nelson Aguilar",
+    "title": "Microsoft Goes After Google With AI-Boosted Search. Here's How to Try It for Yourself - CNET",
+    "description": "Microsoft's updated version of Bing uses AI to give you more comprehensive answers to your questions. Join the waitlist to try it out yourself.",
+    "url": "https://www.cnet.com/tech/computing/microsoft-goes-after-google-with-ai-boosted-search-heres-how-to-try-it-for-yourself/",
+    "urlToImage": "https://www.cnet.com/a/img/resize/afd59f5abded47d34935013b6a8b77f983a43ec4/hub/2023/02/07/234a11e1-6dc2-46fc-ab89-2f99aa51b0f6/screenshot-2023-02-07-at-1-01-24-pm.png?auto=webp&fit=crop&height=630&width=1200",
+    "publishedAt": "2023-02-09T13:30:02Z",
+    "content": "Microsoft's new Bing search engine, powered by the same OpenAI technology behind ChatGPT, is now available to use as a limited preview. Anyone can try out a few sample queries, available on the Bing … [+2904 chars]"
+    },
+    {
+    "source": {
+    "id": "bloomberg",
+    "name": "Bloomberg"
+    },
+    "author": null,
+    "title": "Hogwarts Legacy Release Faces Backlash For J.K. Rowling's Trans Views - Bloomberg",
+    "description": null,
+    "url": "https://www.bloomberg.com/tosv2.html?vid=&uuid=746032ee-a88a-11ed-b14e-56704c6e4457&url=L25ld3MvYXJ0aWNsZXMvMjAyMy0wMi0wOS9ob2d3YXJ0cy1sZWdhY3ktcmVsZWFzZS1mYWNlcy1iYWNrbGFzaC1mb3Itai1rLXJvd2xpbmctcy10cmFucy12aWV3cw==",
+    "urlToImage": null,
+    "publishedAt": "2023-02-09T13:00:56Z",
+    "content": "To continue, please click the box below to let us know you're not a robot."
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "CNBC"
+    },
+    "author": "Kevin Breuninger",
+    "title": "Biden speech may not help in 2024 race versus Trump, Republicans - CNBC",
+    "description": "Biden has yet to confirm his plans for the next election cycle, but he's expected to make a decision soon, according to various news outlets.",
+    "url": "https://www.cnbc.com/2023/02/09/biden-state-of-the-union-may-not-help-in-2024-election.html",
+    "urlToImage": "https://image.cnbcfm.com/api/v1/image/107191421-1675885148289-gettyimages-1246878512-State_of_the_Union.jpeg?v=1675947601&w=1920&h=1080",
+    "publishedAt": "2023-02-09T13:00:01Z",
+    "content": "President Joe Biden's second State of the Union address played well with viewers, and may have helped him tee up a bid for reelection in 2024 but it might not make a lasting impact on his hopes for a… [+5455 chars]"
+    }
+]
+}
+    
