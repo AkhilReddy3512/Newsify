@@ -1,4 +1,5 @@
-# Getting Started with Create React App
+# Getting Started with Newisfy APP
+Newsify is an user friendly website used to browse latest news about all categories
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
