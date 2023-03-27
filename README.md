@@ -1,5 +1,5 @@
 # Getting Started with Newisfy APP
-Newsify is an user friendly website used to browse latest news about all categories
+Newsify is an user friendly website used to browse latest news about variouscategories
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
