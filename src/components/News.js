@@ -3,12 +3,14 @@ import NewsItem from './NewsItem'
 import Spinner from './Spinner';
 import PropTypes from 'prop-types';
 import InfiniteScroll from "react-infinite-scroll-component";
+import NavBar from './NavBar';
 
 const News = (props) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResults] = useState(0);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -16,7 +18,8 @@ const News = (props) => {
 
   const updateNews = async () => {
     props.setProgress(15);
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pagesize}`;
+    const searchTermParam = searchTerm ? `&q=${encodeURIComponent(searchTerm)}` : '';
+    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}${searchTermParam}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pagesize}`;
     setLoading(true);
     let data = await fetch(url);
     props.setProgress(40);
@@ -38,7 +41,7 @@ const News = (props) => {
     }
     updateNews();
     // eslint-disable-next-line
-  },[props.apiKey])
+  }, [props.apiKey ,props.category, searchTerm])
 
   /*const handlePrevClick = async () =>{
       setPage(page-1);
@@ -48,10 +51,16 @@ const News = (props) => {
     setPage(page+1);
       updateNews();
     } */
+    const handleSearch = (term) => {
+      setSearchTerm(term);
+      setArticles([]);
+      setPage(1);
+    };
 
   const fetchMoreData = async () => {
+    const nextPage = page + 1; 
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page + 1}&pageSize=${props.pagesize}`;
-    setPage(page + 1);
+    setPage(nextPage);
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(articles.concat(parsedData.articles));
@@ -60,6 +69,7 @@ const News = (props) => {
 
   return (
     <>
+    <NavBar handleSearch={handleSearch} />
     <div className="container my-3">
       <h2 className='text-center' style={{ margin: '20px 0px' , marginTop: '80px'}}>Today's Top {capitalizeFirstLetter(props.category)} News!!!!</h2>
       {loading && <Spinner/>}
@@ -70,8 +80,8 @@ const News = (props) => {
         loader={<Spinner />}
       >
         <div className="container row">
-          {articles.map((element) => {
-            return <div className="column-md-3" key={element.url}>
+          {articles.map((element, index) => {
+            return <div className="column-md-3" key={element.url + index}>
               <NewsItem title={element.title ? element.title.slice(0, 46) : ""} description={element.description ? element.description.slice(0, 100) : ""} imgurl={element.urlToImage} newsurl={element.url} author={element.author} datetime={element.publishedAt} source={element.source.name} />
             </div>
           })}
